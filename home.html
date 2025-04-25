@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Music Player</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>muscify</h1>
+        </header>
+
+        <div class="player">
+            <div class="album-art">
+                <img id="cover-image" src="/api/placeholder/300/300" alt="Album Art" />
+            </div>
+
+            <div class="visualizer">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time-display">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn" id="prev">Previous</button>
+                <button class="btn" id="play">Play</button>
+                <button class="btn" id="next">Next</button>
+            </div>
+
+            <ul class="playlist">
+                <li class="song playing" data-cover="duniya img.jpg" data-audio="Luka Chuppi_ Duniyaa Full Video Song  Kartik Aaryan Kriti Sanon  Akhil  Dhvani B.mp3">
+                    <span>1. duniya</span>
+                    <span>5:24</span>
+                </li>
+                <li class="song" data-cover="terevaste.jpg" data-audio="Tere Vaaste  Zara Hatke Zara Bachke  Vicky Kaushal, Sara Ali Khan, Varun J, Sachin-Jigar,Amitabh B.mp3">
+                    <span>2.tere vaaste </span>
+                    <span>4:16</span>
+                </li>
+                <li class="song" data-cover="kumkumala.jpg" data-audio="videoplayback (2).m4a">
+                    <span>3. kumkumala</span>
+                    <span>3:58</span>
+                </li>
+                <li class="song" data-cover="softly.jpg" data-audio="SOFTLY (Official Music Video) KARAN AUJLA  IKKY  LATEST PUNJABI SONGS 2023.mp3">
+                    <span>4.softly  </span>
+                    <span>4:45</span>
+                </li>
+                <li class="song" data-cover="download.jpg" data-audio="videoplayback.m4a">
+                    <span>5. Apna banale</span>
+                    <span>6:12</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <audio id="audio-player" src="songs/duniya.mp3"></audio>
+    
+    <script src="home.js"></script>
+</body>
+</html>
